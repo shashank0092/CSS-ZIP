@@ -1,0 +1,53 @@
+
+body {
+    margin:0;
+    font-family: Tahoma;
+    width: 100%;
+    font-size: 16px;
+    background-color: #1b1b32;
+  color: #f5f6f7;
+}
+h1,p {
+   text-align: center;
+   margin: 1em auto;
+   color: #BFEAF5;
+}
+fieldset{
+    width:80%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 1em;
+
+   
+}
+label{
+    display: block;
+    padding:0px auto;
+    padding-bottom: 20px;
+}
+.user-data input{
+    width: 100%;
+}
+input[type="submit"]{
+    margin: 20px auto;
+    display: block;
+    width:10%;
+    max-width: 300px;
+    min-width: 100px;
+}
+table{
+    width:100%;  
+    font-size: 13px;  
+}
+.user-suggestion label {
+   padding: 1.5px;
+}
+.a label{
+margin-bottom: 10px;
+}
+textarea{
+    display: block;
+    width:60%;
+    margin-left: 20px;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROJECT</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title"><u>Survey Form</u></h1>
+    <p id="description">
+      Base on the resent user experiance of our latest patch
+    </p>
+
+    <form
+      id="survey-form"
+      method="post"
+      action="https://register-demo.freecodecamp.org"
+    >
+      <fieldset class="user-data">
+        <label id="name-label" for="name"
+          >what is your name ?<input
+            required
+            placeholder="ex.Joe Maharana"
+            type="text"
+            name="name"
+            id="name"
+        /></label>
+        <label id="email-label" for="email"
+          >E-mail address
+          <input
+            required
+            placeholder="ex.joe1002@gmail.com"
+            type="email"
+            name="email"
+            id="email"
+        /></label>
+        <label id="number-label" for="number"
+          >Enter a number :<input
+            min="0"
+            max="9"
+            id="number"
+            required
+            placeholder="(0-9)"
+            type="number"
+        /></label>
+      </fieldset>
+      <fieldset class="user-experience">
+        <label for="user-platform"
+          >Platform
+          <select id="dropdown" name="user-platform" id="platform">
+            <option value="">(which platform you play in)</option>
+            <option value="1">Mobile</option>
+            <option value="2">PC</option>
+            <option value="3">Xbox</option>
+            <option value="4">Play-Station</option>
+            <option value="5">Nintendo</option>
+            <option value="6">Console</option>
+          </select>
+        </label>
+        <table class="experience">
+          <tr>
+            <td></td>
+            <td></td>
+            <td>Bad</td>
+            <td>OK</td>
+            <td>Good</td>
+            <td>Very Good</td>
+          </tr>
+          <tr>
+            <td class="question">How is the charecter balance this patch</td>
+            <td></td>
+            <td><input value="question" name="option-1" type="radio" /></td>
+            <td><input value="question" name="option-1" type="radio" /></td>
+            <td><input value="question" name="option-1" type="radio" /></td>
+            <td><input value="question" name="option-1" type="radio" /></td>
+          </tr>
+          <tr>
+            <td class="question">How is the rank making system</td>
+            <td></td>
+            <td><input value="question" name="option-2" type="radio" /></td>
+            <td><input value="question" name="option-2" type="radio" /></td>
+            <td><input value="question" name="option-2" type="radio" /></td>
+            <td><input value="question" name="option-2" type="radio" /></td>
+          </tr>
+          <tr>
+            <td class="question">How is the community</td>
+            <td></td>
+            <td><input value="question" name="option-3" type="radio" /></td>
+            <td><input value="question" name="option-3" type="radio" /></td>
+            <td><input value="question" name="option-3" type="radio" /></td>
+            <td><input value="question" name="option-3" type="radio" /></td>
+          </tr>
+          <tr>
+            <td class="question">How is the bug-fixing</td>
+            <td></td>
+            <td><input value="question" name="option-4" type="radio" /></td>
+            <td><input value="question" name="option-4" type="radio" /></td>
+            <td><input value="question" name="option-4" type="radio" /></td>
+            <td><input value="question" name="option-4" type="radio" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset class="user-suggestion">
+        <label class="a" for="referrer"
+          >How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Friend</option>
+            <option value="2">YouTube Channel</option>
+            <option value="3">Social Media</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="suggestion"
+          >What development do u want to see in future ?</label
+        >
+        <label><input value="suggestion" type="checkbox" />New Charecter</label>
+        <label
+          ><input value="suggestion" type="checkbox" />Charecter balance</label
+        >
+        <label><input value="suggestion" type="checkbox" />New map</label>
+        <label><input value="suggestion" type="checkbox" />New iteam</label>
+        <label><input value="suggestion" type="checkbox" />More event</label>
+        <label
+          ><input value="suggestion" type="checkbox" />other
+          <textarea
+            id="bio"
+            name="bio"
+            rows="3"
+            cols="30"
+            placeholder="I like coding on the beach..."
+          ></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
